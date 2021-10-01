@@ -18,6 +18,7 @@ val Start : State = state(Interaction) {
             try {
                 val obj = JSONObject(emotionJson)
                 println(obj)
+                println(obj.getJSONObject("bbox_0").getJSONArray("cat"))
             } catch (e: JSONException) {
                 println("Json syntax exception!")
                 println(e)
