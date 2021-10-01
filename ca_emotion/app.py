@@ -47,8 +47,8 @@ def gen(camera):
     # write_op will write the output to a new file and return the location(2nd return variable)
     # return_op will return the processed image as the 3rd return variable
 
-    xs, _, r = yolo_infer2(img, '/Users/jurriaan/git/gh/ca_emotion/experiment/results/',
-                           '/Users/jurriaan/git/gh/ca_emotion/experiment/models/', context_norm, body_norm, ind2cat, ind2vad, write_op=False,
+    xs, _, r = yolo_infer2(img, 'experiment/results/',
+                           'experiment/models/', context_norm, body_norm, ind2cat, ind2vad, write_op=False,
                            return_op=True)
 
     # the inference function returns a dict, top-level key is the bounding box. Each bounding box has sub keys:
